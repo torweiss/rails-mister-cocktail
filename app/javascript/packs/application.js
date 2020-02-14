@@ -17,3 +17,18 @@
 
 console.log('Hello World from Webpacker')
 import 'bootstrap';
+
+
+let scrollPos = 10;
+const image = document.querySelector('.container-cocktail');
+
+const checkPosition = () => {
+  let windowY = window.scrollY;
+  if (windowY > scrollPos) {
+    image.classList.add('container-no-photo');
+  } else {
+    image.classList.remove('container-no-photo');
+  }
+}
+
+window.addEventListener('scroll', checkPosition);

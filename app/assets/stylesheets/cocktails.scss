@@ -1,3 +1,56 @@
 // Place all the styles related to the cocktails controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap');
+
+body {
+  margin: 0;
+  background: black;
+}
+
+.container-cocktail {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(149,0,39,1) 0%, rgba(251,54,85,1) 100%);
+  transition: margin-top 2s ease-in-out;
+}
+
+.container-photo {
+  background-image: asset-url('cocktails_background.jpeg');
+  background-size: cover;
+  width: 90%;
+  height: 85vh;
+  margin: 0 auto;
+  transition: margin-top 1s ease-in-out;
+}
+
+.container-no-photo {
+  margin-top: -100vh;
+}
+
+.cocktails {
+  width: 600px;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  height: 1000px;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.cocktail-item {
+  margin-bottom: 3rem;
+  height: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: #FB3C45;
+}
